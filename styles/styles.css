@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    font-size: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+@media screen and (min-width: 320px){
+    /* Painel */
+    .fm-panel {
+        position: relative;
+        width: 100%;
+        height: 55rem;
+        background: linear-gradient(
+          to right,
+          rgba(255, 143, 112, 1) 0%,
+          rgba(255, 61, 84, 1) 100%
+        );
+        border-bottom-left-radius: 100px;
+        overflow: hidden;
+      }
+
+      .fm-pattern-panel{
+        position: absolute;
+        left: -33%;
+        top: 60%;
+        width: 161%;
+        transform: rotate(6deg);
+        object-fit: contain;
+        transform: translateY(-50%);
+        opacity: .5;
+      }
+      .fm-container-top{
+          width: 85%;
+          margin: 0 auto;
+      }
+
+      .fm-header{
+          display: block;
+      }
+
+      .fm-header button{
+          background: transparent;
+          border: none;
+      }
+
+      .fm-top-header{
+          display: flex;
+          align-items: center;
+          width: 100%;
+          justify-content: space-between;
+          padding: 3.33rem 0;
+          z-index: 1000;
+          position: relative;
+      }
+      .fm-content{
+          width: 100%;
+          position: relative;
+          margin-top: 6rem;
+          margin-right: 10rem;
+          display: block;
+      }
+      .fm-panel-title-content{
+          font-size: 3.3rem;
+          text-align: center;
+          color: #fff;
+          display: block;
+      }
+
+      .fm-panel-subtitle-content{
+          font-size: 17px;
+          margin-top: 3rem;
+          font-weight: 300;
+          text-align: center;
+          color: #fff;
+      }
+
+      .fm-container-button-top{
+          display: flex;
+          margin-top: 3rem;
+          justify-content: center;
+      }
+
+      .fm-container-button-top a:first-child{
+          font-size: 16px;
+          color: #ff525d;
+          background-color: white;
+          border-radius: 3rem;
+          padding: 1.6rem 1.6rem;
+          border: none;
+          margin-right: 0.72rem;
+        }
+
+        .fm-container-button-top a:last-child{
+            font-size: 16px;
+            color: white;
+            background-color: transparent;
+            border-radius: 3rem;
+            padding: 1.6rem 1.6rem;
+            border: 1px solid white;
+          }
+
+        /* Menu */
+        .fm-menu-mobile{
+            display: none;
+            width: 85%;
+            background-color: white;
+            top: 15%;
+            position: absolute;
+            overflow:hidden;
+            justify-content: center;
+            flex-direction: column;
+            z-index: 2000;
+            border-radius: 8px;
+            -webkit-box-shadow: 0 10px 20px 5px rgb(0 0 0 / 20%);
+            box-shadow: 0 10px 20px 5px rgb(0 0 0 / 20%);
+        }
+
+        .fm-menu-mobile ul{
+            flex-direction: column;
+            position: relative;
+            left: 7.5%;
+        }
+
+        .fm-menu-mobile .fm-header-navItem:first-child{
+            margin-top: 1rem;
+        }
+        
+
+        .fm-header-navItem{
+            height: 37px;
+            position:relative; 
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            margin-bottom: 1rem;
+            width: 85%;
+            justify-content: center;
+        }
+
+
+        .fm-header-navItem a{
+            color: #25252d;
+            font-size: 18px;
+        }
+
+        .fm-header-navItem img{
+            margin-left: 1rem;
+        }
+
+        #fm-login-button{
+            display: flex;
+            justify-content: center;
+            width: 85%;
+            border-top: 1px solid #f0f0f0;
+        }
+
+        #fm-signUp-nav{
+            background: linear-gradient(45deg, #ff8f70, #ff3d54);
+            text-align: center;
+            color: white;
+            width: 70%;
+            padding: 1rem;
+            border-radius: 3rem;
+        }
+
+        .fm-menu-icon-button{
+            display: block;
+        }
+
+        .fm-submenu-mobile{
+            display: none;
+            justify-content: left;
+            width: 70%;
+            height: auto;
+            margin-top: 15px;
+            background-color: rgb(240, 239, 239);
+            border-radius: 5px;
+        }
+
+        .fm-submenu-mobile li{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 34px;
+            color: rgb(117,117,117);
+            margin-top: 15px;
+            margin-bottom: 15px;
+            font-size: 15px;
+        }
+
+
+        
+
+
+}
+
+@media screen and (min-width: 576px){
+
+}
+
+@media screen and (min-width: 768px){
+
+}
+
+@media screen and (min-width: 992px){
+
+}
+
+@media screen and (min-width: 1200px){
+
+}
+
+@media screen and (min-width: 1364px){
+
+}
+
+@media screen and (min-width: 1600px){
+
+}
+
+/* Fontes */
+.fm-font-overpass{
+    font-family: 'Overpass', sans-serif;
+}
+
+.fm-font-ubuntu{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Fontes & Pesos*/
+
+.fm-font-overpass-bold{
+    font-family: 'Overpass', sans-serif;
+    font-weight: bold;
+}
+
+.fm-font-ubuntu-bold{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+
+.fm-font-overpass-300{
+    font-family: 'Overpass', sans-serif;
+    font-weight: 300;
+}
+
+.fm-font-overpass-600{
+    font-family: 'Overpass', sans-serif;
+    font-weight: 600;
+}
+
+.fm-font-ubuntu-400{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+}
+
+.fm-font-ubuntu-500{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+}
+
+.fm-font-ubuntu-700{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+}
+
+/* Classes de comprtamento */
+.fm-is-open{
+    display: flex;
+}
+

@@ -16,6 +16,18 @@ ul {
     list-style-type: none;
 }
 
+@keyframes slideMenu {
+    to{
+        top: 25%;
+    }
+}
+
+@keyframes slideSubMenu {
+    to{
+        opacity: 1;
+    }
+}
+
 @media screen and (min-width: 320px){
     /* Painel */
     .fm-panel {
@@ -116,7 +128,7 @@ ul {
             display: none;
             width: 85%;
             background-color: white;
-            top: 15%;
+            top: -100%;
             position: absolute;
             overflow:hidden;
             justify-content: center;
@@ -187,6 +199,7 @@ ul {
             margin-top: 15px;
             background-color: rgb(240, 239, 239);
             border-radius: 5px;
+            opacity: 0;
         }
 
         .fm-submenu-mobile li{
@@ -278,6 +291,15 @@ ul {
 }
 
 /* Classes de comprtamento */
+
+.fm-slideMenu {
+    animation: slideMenu 0.5s forwards cubic-bezier(.17,.67,.83,.67);
+}
+
+.fm-slideSubMenu {
+    animation: slideSubMenu 0.5s forwards ease-out;
+}
+
 .fm-is-open{
     display: flex;
 }
